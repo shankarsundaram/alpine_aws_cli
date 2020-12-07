@@ -13,7 +13,7 @@ RUN apk add make && apk add curl && apk add openssh
 
 # Install aws-cli
 RUN apk -Uuv add groff less python3 py3-pip
-RUN pip3 install awscliv2 boto3 requests requests-aws4auth
+RUN pip3 install awscli boto3 requests requests-aws4auth
 RUN apk --purge -v del py3-pip
 RUN rm /var/cache/apk/*
 
